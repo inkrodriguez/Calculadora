@@ -78,16 +78,12 @@ class MainActivity : AppCompatActivity() {
             when (binding.tvOperador.text) {
                 "+" -> {
                     binding.tvOperador.text = "+"
-                    if (binding.tvSecundaria.text == "") {
+                    if (binding.tvSecundaria.text == "" || binding.tvPrincipal.text == "") {
                         tela = ""
                         binding.tvSecundaria.text = binding.tvPrincipal.text
                         binding.tvPrincipal.text = ""
                     }
-                    else if(binding.tvPrincipal.text == ""){
-                        tela = ""
-                        binding.tvSecundaria.text = binding.tvPrincipal.text
-                        binding.tvPrincipal.text = ""
-                    }else {
+                    else {
                         tela = ""
                         var calculo = binding.tvSecundaria.text.toString().toDouble() + binding.tvPrincipal.text.toString().toDouble()
                         binding.tvSecundaria.text = calculo.toString()
@@ -97,16 +93,12 @@ class MainActivity : AppCompatActivity() {
 
                 "-" -> {
                     binding.tvOperador.text = "-"
-                    if (binding.tvSecundaria.text == "") {
+                    if (binding.tvSecundaria.text == "" || binding.tvPrincipal.text == "") {
                         tela = ""
                         binding.tvSecundaria.text = binding.tvPrincipal.text
                         binding.tvPrincipal.text = ""
                     }
-                    else if(binding.tvPrincipal.text == ""){
-                        tela = ""
-                        binding.tvSecundaria.text = binding.tvPrincipal.text
-                        binding.tvPrincipal.text = ""
-                    }else {
+                    else {
                         tela = ""
                         binding.tvSecundaria.text = binding.tvSecundaria.text
                         var calculo = binding.tvSecundaria.text.toString().toDouble() - binding.tvPrincipal.text.toString().toDouble()
@@ -116,12 +108,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 "*" -> {
                     binding.tvOperador.text = "*"
-                    if (binding.tvSecundaria.text == "") {
-                        tela = ""
-                        binding.tvSecundaria.text = binding.tvPrincipal.text
-                        binding.tvPrincipal.text = ""
-                    }
-                    else if(binding.tvPrincipal.text == ""){
+                    if (binding.tvSecundaria.text == "" || binding.tvPrincipal.text == "") {
                         tela = ""
                         binding.tvSecundaria.text = binding.tvPrincipal.text
                         binding.tvPrincipal.text = ""
@@ -135,12 +122,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 "/" -> {
                     binding.tvOperador.text = "/"
-                    if (binding.tvSecundaria.text == "") {
-                        tela = ""
-                        binding.tvSecundaria.text = binding.tvPrincipal.text
-                        binding.tvPrincipal.text = ""
-                    }
-                    else if(binding.tvPrincipal.text == ""){
+                    if (binding.tvSecundaria.text == "" || binding.tvPrincipal.text == "") {
                         tela = ""
                         binding.tvSecundaria.text = binding.tvPrincipal.text
                         binding.tvPrincipal.text = ""
