@@ -30,13 +30,13 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="344dp"
         android:backgroundTint="#333333"
         android:fontFamily="@font/aldrich"
         android:text="8"
         android:textSize="40sp"
         app:layout_constraintStart_toEndOf="@+id/btn7"
-        app:layout_constraintTop_toBottomOf="@+id/btnLimpar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn4"
@@ -56,10 +56,11 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="#FF9800"
-        android:fontFamily="@font/aldrich"
+        android:fontFamily="sans-serif-black"
         android:text="="
+        android:textAllCaps="false"
         android:textSize="40sp"
         app:layout_constraintStart_toEndOf="@+id/btn0"
         app:layout_constraintTop_toBottomOf="@+id/btnSomar" />
@@ -69,25 +70,27 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="252dp"
         android:backgroundTint="#FF9800"
+        android:fontFamily="sans-serif-black"
         android:text="÷"
+        android:textAllCaps="false"
         android:textSize="40sp"
         app:layout_constraintStart_toEndOf="@+id/btnLimpar"
-        app:layout_constraintTop_toBottomOf="@+id/tvPrincipal" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnLimpar"
         android:layout_width="180dp"
         android:layout_height="80dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="252dp"
         android:backgroundTint="#808080"
         android:fontFamily="@font/aldrich"
         android:text="AC"
         android:textSize="40sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPrincipal" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn6"
@@ -122,8 +125,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="#FF9800"
-        android:fontFamily="@font/aldrich"
+        android:fontFamily="sans-serif-black"
         android:text="-"
+        android:textAllCaps="false"
         android:textSize="40sp"
         app:layout_constraintStart_toEndOf="@+id/btn6"
         app:layout_constraintTop_toBottomOf="@+id/btnMultiplicar" />
@@ -135,8 +139,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="#FF9800"
-        android:fontFamily="@font/aldrich"
+        android:fontFamily="sans-serif-black"
         android:text="+"
+        android:textAllCaps="false"
         android:textSize="40sp"
         app:layout_constraintStart_toEndOf="@+id/btn3"
         app:layout_constraintTop_toBottomOf="@+id/btnSubtrair" />
@@ -146,25 +151,27 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="344dp"
         android:backgroundTint="#FF9800"
-        android:fontFamily="@font/aldrich"
+        android:fontFamily="sans-serif-black"
+        android:text="x"
+        android:textAllCaps="false"
         android:textSize="40sp"
         app:layout_constraintStart_toEndOf="@+id/btn9"
-        app:layout_constraintTop_toBottomOf="@+id/btnDividir" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn7"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="344dp"
         android:backgroundTint="#333333"
         android:fontFamily="@font/aldrich"
         android:text="7"
         android:textSize="40sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLimpar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn3"
@@ -210,7 +217,7 @@
         android:layout_width="180dp"
         android:layout_height="80dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="#333333"
         android:fontFamily="@font/aldrich"
         android:text="0"
@@ -223,13 +230,13 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="344dp"
         android:backgroundTint="#333333"
         android:fontFamily="@font/aldrich"
         android:text="9"
         android:textSize="40sp"
         app:layout_constraintStart_toEndOf="@+id/btn8"
-        app:layout_constraintTop_toBottomOf="@+id/btnLimpar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvSecundaria"
@@ -237,7 +244,6 @@
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
-        android:hint="0"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="40sp"
@@ -251,7 +257,6 @@
         android:layout_marginTop="48dp"
         android:textColorHint="#FFFFFF"
         android:textSize="20sp"
-        android:visibility="visible"
         app:layout_constraintTop_toBottomOf="@+id/tvSecundaria"
         tools:layout_editor_absoluteX="31dp" />
 

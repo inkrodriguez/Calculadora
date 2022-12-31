@@ -188,7 +188,6 @@ class MainActivity : AppCompatActivity() {
                     } else {
                         operation()
                         binding.tvOperador.text = "*"
-                        Toast.makeText(this, "fez a operação", Toast.LENGTH_SHORT).show()
                     }
             }
 
@@ -200,7 +199,6 @@ class MainActivity : AppCompatActivity() {
                 } else {
                     operation()
                     binding.tvOperador.text = "-"
-                    Toast.makeText(this, "fez a operação", Toast.LENGTH_SHORT).show()
                 }
             }
 
