@@ -100,7 +100,6 @@ class MainActivity : AppCompatActivity() {
                     }
                     else {
                         tela = ""
-                        binding.tvSecundaria.text = binding.tvSecundaria.text
                         var calculo = binding.tvSecundaria.text.toString().toDouble() - binding.tvPrincipal.text.toString().toDouble()
                         binding.tvSecundaria.text = calculo.toString()
                         binding.tvPrincipal.text = ""
