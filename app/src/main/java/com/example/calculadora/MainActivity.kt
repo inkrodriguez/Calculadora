@@ -124,7 +124,23 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 "/" -> {
-
+                    binding.tvOperador.text = "/"
+                    if (binding.tvSecundaria.text == "") {
+                        tela = ""
+                        binding.tvSecundaria.text = binding.tvPrincipal.text
+                        binding.tvPrincipal.text = ""
+                    }
+                    else if(binding.tvPrincipal.text == ""){
+                        tela = ""
+                        binding.tvSecundaria.text = binding.tvPrincipal.text
+                        binding.tvPrincipal.text = ""
+                    }
+                    else {
+                        tela = ""
+                        var calculo = binding.tvSecundaria.text.toString().toInt() / binding.tvPrincipal.text.toString().toInt()
+                        binding.tvSecundaria.text = calculo.toString()
+                        binding.tvPrincipal.text = ""
+                    }
                 }
             }
 
