@@ -69,6 +69,11 @@ class MainActivity : AppCompatActivity() {
                 binding.tvPrincipal.text = tela
             }
 
+            binding.btnVirgula.setOnClickListener {
+                tela = (tela + ".")
+                binding.tvPrincipal.text = tela
+            }
+
         fun operation() {
             when (binding.tvOperador.text) {
                 "+" -> {
@@ -84,7 +89,7 @@ class MainActivity : AppCompatActivity() {
                         binding.tvPrincipal.text = ""
                     }else {
                         tela = ""
-                        var calculo = binding.tvSecundaria.text.toString().toInt() + binding.tvPrincipal.text.toString().toInt()
+                        var calculo = binding.tvSecundaria.text.toString().toDouble() + binding.tvPrincipal.text.toString().toDouble()
                         binding.tvSecundaria.text = calculo.toString()
                         binding.tvPrincipal.text = ""
                     }
@@ -104,7 +109,7 @@ class MainActivity : AppCompatActivity() {
                     }else {
                         tela = ""
                         binding.tvSecundaria.text = binding.tvSecundaria.text
-                        var calculo = binding.tvSecundaria.text.toString().toInt() - binding.tvPrincipal.text.toString().toInt()
+                        var calculo = binding.tvSecundaria.text.toString().toDouble() - binding.tvPrincipal.text.toString().toDouble()
                         binding.tvSecundaria.text = calculo.toString()
                         binding.tvPrincipal.text = ""
                     }
@@ -123,7 +128,7 @@ class MainActivity : AppCompatActivity() {
                     }
                     else {
                         tela = ""
-                        var calculo = binding.tvSecundaria.text.toString().toInt() * binding.tvPrincipal.text.toString().toInt()
+                        var calculo = binding.tvSecundaria.text.toString().toDouble() * binding.tvPrincipal.text.toString().toDouble()
                         binding.tvSecundaria.text = calculo.toString()
                         binding.tvPrincipal.text = ""
                     }
@@ -142,7 +147,7 @@ class MainActivity : AppCompatActivity() {
                     }
                     else {
                         tela = ""
-                        var calculo = binding.tvSecundaria.text.toString().toInt() / binding.tvPrincipal.text.toString().toInt()
+                        var calculo = binding.tvSecundaria.text.toString().toDouble() / binding.tvPrincipal.text.toString().toDouble()
                         binding.tvSecundaria.text = calculo.toString()
                         binding.tvPrincipal.text = ""
                     }
