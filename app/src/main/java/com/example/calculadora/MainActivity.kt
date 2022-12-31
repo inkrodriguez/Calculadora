@@ -19,6 +19,11 @@ class MainActivity : AppCompatActivity() {
 
         var tela = binding.tvPrincipal.text.toString()
 
+            binding.btn0.setOnClickListener {
+                tela = tela + 0
+                binding.tvPrincipal.text = tela
+            }
+
             binding.btn1.setOnClickListener {
                 tela = tela + 1
                 binding.tvPrincipal.text = tela
